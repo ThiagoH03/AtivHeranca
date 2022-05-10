@@ -14,10 +14,13 @@ public class Operario extends Empregado {
     public void setComissao(double comissao) {
         this.comissao = comissao;
     }
-    public double calcularSalario(){
-        double salarioLiquido = calcularSalario();
-        double salarioOperario = salarioLiquido + comissao;
 
+    public double calcularComissão(){
+        double valorComissao = (valorProducao/100)*this.comissao;
+        return valorComissao;
+    }
+    public double calcularSalario(){
+        double salarioOperario = calcularSalario() + calcularComissão();
         return salarioOperario;
     }
 }

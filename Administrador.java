@@ -10,8 +10,7 @@ public class Administrador extends Empregado{
     }
 
     public double calcularSalario(){
-        double salarioLiquido = calcularSalario();
-        double salarioAdmin = ajudaDeCusto + salarioLiquido;
+        double salarioAdmin = ajudaDeCusto + calcularSalario();
         return salarioAdmin;
     }
 }
