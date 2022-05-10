@@ -8,10 +8,10 @@ public class Pessoa{
 
     }
     public Pessoa(String nome){
-        return System.out.println(nome);
+        System.out.println(nome);
     }
     public Pessoa(String nome, String telefone){
-        return System.out.println(nome + telefone);
+        System.out.println(nome + telefone);
     }
 
     public String getNome() {
